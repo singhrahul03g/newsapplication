@@ -1,19 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { CatnewsService } from 'src/app/services/catnews.service';
-
+import {CatnewsService} from '../../services/catnews.service';
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  selector: 'app-entertainment',
+  templateUrl: './entertainment.component.html',
+  styleUrls: ['./entertainment.component.css']
 })
-export class MainComponent implements OnInit {
+export class EntertainmentComponent implements OnInit {
+
   resData;
   newsData;
   p: number = 1;
   constructor(private nser:CatnewsService) { }
+
   
+
+
   ngOnInit() {
-    this.nser.getlatestnews()
+    this.nser.entertainmentnews()
     .subscribe(res=>
       {
         this.resData=res;
@@ -22,8 +25,10 @@ export class MainComponent implements OnInit {
         {
           this.newsData=this.resData.articles;
           console.log(this.newsData)
+          
+          
+
         }
       })
   }
-
 }

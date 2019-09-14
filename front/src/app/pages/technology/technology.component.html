@@ -1,5 +1,5 @@
 <div class="main_content floatleft">
-    <h1>Latest News</h1>
+    <h1>All About Technolgy</h1>
     <div *ngIf="newsData">
       <div *ngFor="let n of newsData |  paginate:  { itemsPerPage: 5, currentPage: p }">
           <h3>{{n.title|uppercase}}</h3>
@@ -21,4 +21,9 @@
 </div>
 
 <app-sidebar></app-sidebar>
+
+
+
+
+
 

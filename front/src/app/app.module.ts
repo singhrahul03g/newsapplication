@@ -13,6 +13,13 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SearchComponent } from './pages/search/search.component';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { BusinessComponent } from './pages/business/business.component';
+import { SportsComponent } from './pages/sports/sports.component';
+import { TechnologyComponent } from './pages/technology/technology.component';
+import { EntertainmentComponent } from './pages/entertainment/entertainment.component';
+import { HealthComponent } from './pages/health/health.component';
+import { ScienceComponent } from './pages/science/science.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,14 +31,21 @@ import { SearchComponent } from './pages/search/search.component';
     SidebarComponent,
     AboutComponent,
     ContactComponent,
-    SearchComponent
+    SearchComponent,
+    BusinessComponent,
+    SportsComponent,
+    TechnologyComponent,
+    EntertainmentComponent,
+    HealthComponent,
+    ScienceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

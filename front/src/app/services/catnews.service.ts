@@ -12,7 +12,25 @@ export class CatnewsService {
   }
   getlatestnews()
   {
-    return this.http.get("https://newsapi.org/v2/everything?q=bitcoin&from=2019-08-11&sortBy=publishedAt&apiKey=279979233523403b9e53b4f88a408f70");
+    return this.http.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=e4bd49634b6747809feede23de875ce4");
+  }
+  sportsnews(){
+    return this.http.get("https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=e4bd49634b6747809feede23de875ce4");
+  }
+  sciencenews(){
+    return this.http.get("https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=e4bd49634b6747809feede23de875ce4");
+  }
+  healthnews(){
+    return this.http.get("https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=e4bd49634b6747809feede23de875ce4");
+  }
+  technologynews(){
+    return this.http.get("https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=e4bd49634b6747809feede23de875ce4");
+  }
+  businessnews(){
+    return this.http.get("https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=e4bd49634b6747809feede23de875ce4");
+  }
+  entertainmentnews(){
+    return this.http.get("https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=e4bd49634b6747809feede23de875ce4");
   }
   getnewsCategoryBy(id)
   {
